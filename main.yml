@@ -24,6 +24,10 @@
   tasks:
     - include: tasks/ansible-setup.yml
 
+    - include: tasks/yadr.yml
+
+    - include: tasks/oh-my-zsh.yml
+
     - include: tasks/sudoers.yml
       when: configure_sudoers
 

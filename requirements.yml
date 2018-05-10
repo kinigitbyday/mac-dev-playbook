@@ -1,4 +1,1 @@
----
-- name: geerlingguy.dotfiles
-- name: geerlingguy.homebrew
-- name: geerlingguy.mas
+ansible == 2.4.0.0

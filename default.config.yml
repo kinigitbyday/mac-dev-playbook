@@ -6,43 +6,37 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo: https://github.com/kinigitbyday/dotfiles.git
+dotfiles_push_url: git@github.com:kinigitbyday/dotfiles.git
+dotfiles_repo_local_destination: ~/dev/dotfiles
 dotfiles_files:
-  - .bash_profile
   - .gitignore
-  - .inputrc
   - .osx
-  - .vimrc
+  - .zshrc
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
+  - yleisradio/terraforms/chtf
+  - coreutils
   - git
+  - giter8
   - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
+  - caskformula/caskformula/inkscape
+  - neovim
   - node
   - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
   - openssl
-  - pv
+  - python
+  - python3
+  - ruby
+  - sbt
+  - terraform
+  - thefuck
   - wget
-  - wrk
+  - vegeta
+  - vim
+  - yarn
+  - zsh
+  - zsh-syntax-highlighting
 
 homebrew_taps:
   - homebrew/core
@@ -52,18 +46,15 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
   - docker
-  - dropbox
   - firefox
   - google-chrome
-  - handbrake
+  - insomnia
   - licecap
-  - limechat
-  - macvim
+  - macdown
+  - ngrok
   - sequel-pro
-  - skitch
   - slack
   - sublime-text
-  - transmit
   - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
