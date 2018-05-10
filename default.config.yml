@@ -48,6 +48,7 @@ homebrew_cask_apps:
   - docker
   - firefox
   - google-chrome
+  - java
   - insomnia
   - licecap
   - macdown
