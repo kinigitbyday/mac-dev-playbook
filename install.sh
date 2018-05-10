@@ -22,6 +22,8 @@ if [[ -d "/Users/${WHOAMI}/.setup" ]]; then
     rm -rf "/Users/${WHOAMI}/.setup" > /dev/null;
 fi
 
+WHOAMI=$(whoami);
+
 git clone https://github.com/kinigitbyday/mac-dev-playbook.git "/Users/${WHOAMI}/.setup" > /dev/null;
 git clone https://github.com/kinigitbyday/dotfiles.git "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
 
