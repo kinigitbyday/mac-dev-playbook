@@ -13,8 +13,6 @@ if [[ -z $(which ansible) ]]; then
     brew install ansible > /dev/null;
 fi
 
-WHOAMI=$(whoami);
-
 if [[ -d "/Users/${WHOAMI}/Documents/dotfiles" ]]; then
     echo "Removing dotfiles";
     rm -rf "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
@@ -34,6 +32,6 @@ ansible-galaxy install -r ./requirements.yml;
 
 echo "Initiating playbook";
 
-ansible-playbook ./main.yml -i inventory -U $(whoami) --ask-sudo-pass;
+ansible-playbook ./main.yml -i inventory -K;
 
 echo "Done.";
