@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set +e
+
 # Install YADR
 if [ -d "./.yadr" ]; then
   echo "YADR repo dir exists. Removing ..."
