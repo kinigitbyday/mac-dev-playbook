@@ -3,6 +3,17 @@
 # Usage:
 # install.sh
 
+fancy_echo() {
+  local fmt="$1"; shift
+
+  # shellcheck disable=SC2059
+  printf "\n$fmt\n" "$@"
+}
+
+trap 'ret=$?; test $ret -ne 0 && printf "failed\n\n" >&2; exit $ret' EXIT
+
+set -e
+
 if ! command -v cc >/dev/null; then
   fancy_echo "Installing xcode ..."
   xcode-select --install
