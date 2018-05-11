@@ -34,4 +34,6 @@ cd ~/.setup/;
 chmod +x scripts/yadr.sh
 chmod +x scripts/playbook.sh
 
-sudo make install
+make yadr
+
+bash ./playbook.sh
