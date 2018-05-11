@@ -59,4 +59,11 @@ echo "Initiating playbook";
 
 ansible-playbook ./main.yml -i inventory -K;
 
+echo "======================================================"
+echo "iTerm2 theme application probably failed"
+echo "To make sure your profile is using the solarized theme"
+echo "Please check your settings under:"
+echo "Preferences> Profiles> [your profile]> Colors> Load Preset.."
+echo "======================================================"
+echo ""
 echo "Done.";
