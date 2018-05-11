@@ -30,10 +30,3 @@ git clone https://github.com/kinigitbyday/mac-dev-playbook.git ~/.setup > /dev/n
 git clone https://github.com/kinigitbyday/dotfiles.git ~/Documents/dotfiles > /dev/null;
 
 cd ~/.setup/;
-
-chmod +x scripts/yadr.sh
-chmod +x scripts/playbook.sh
-
-make yadr
-
-bash ./playbook.sh
