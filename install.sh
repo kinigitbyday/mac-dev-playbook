@@ -22,21 +22,21 @@ else
 fi
 
 if [[ -z $(which brew) ]]; then
-  echo "Installing Homebrew...";
+  fancy_echo "Installing Homebrew...";
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /dev/null;
 fi
 
 if [[ -z $(which ansible) ]]; then
-    echo "Installing Ansible";
+    fancy_echo "Installing Ansible";
     brew install ansible > /dev/null;
 fi
 
 if [[ -d "/Users/${WHOAMI}/Documents/dotfiles" ]]; then
-    echo "Removing dotfiles";
+    fancy_echo "Removing dotfiles";
     rm -rf "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
 fi
 if [[ -d "/Users/${WHOAMI}/.setup" ]]; then
-    echo "Removing playbook";
+    fancy_echo "Removing playbook";
     rm -rf "/Users/${WHOAMI}/.setup" > /dev/null;
 fi
 
@@ -54,7 +54,7 @@ fi
 fancy_echo "YADR rake install..."
 git clone https://github.com/skwp/dotfiles.git ~/.yadr
 cd ~/.yadr
-rake install
+echo "1" | rake install
 
 cd "/Users/${WHOAMI}/.setup/";
 
