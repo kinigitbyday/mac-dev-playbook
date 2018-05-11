@@ -36,9 +36,19 @@ WHOAMI=$(whoami);
 git clone https://github.com/kinigitbyday/mac-dev-playbook.git "/Users/${WHOAMI}/.setup" > /dev/null;
 git clone https://github.com/kinigitbyday/dotfiles.git "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
 
-cd "/Users/${WHOAMI}/.setup/";
+# Install YADR
+if [ -d "./.yadr" ]; then
+  echo "YADR repo dir exists. Removing ..."
+  rm -rf ./.yadr
+fi
 
-sh ./yadr.sh || true
+echo "YADR rake install..."
+git clone https://github.com/kinigitbyday/yadr.git ~/.yadr
+
+cd ~/.yadr
+rake install
+
+cd "/Users/${WHOAMI}/.setup/";
 
 echo "Installing requirements";
 ansible-galaxy install -r ./requirements.yml;
@@ -47,11 +57,4 @@ echo "Initiating playbook";
 
 ansible-playbook ./main.yml -i inventory -K;
 
-echo "======================================================"
-echo "iTerm2 theme application probably failed"
-echo "To make sure your profile is using the solarized theme"
-echo "Please check your settings under:"
-echo "Preferences> Profiles> [your profile]> Colors> Load Preset.."
-echo "======================================================"
-echo ""
 echo "Done.";
