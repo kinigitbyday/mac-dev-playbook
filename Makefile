@@ -3,10 +3,10 @@ install: playbook
 
 yadr:
 	@echo "Building $@"
-	bash ./scripts/yadr.sh
+	bash ./yadr.sh
 	@echo "$@ finished!"
 
 playbook: yadr
 	@echo "Building $@"
-	bash ./scripts/playbook.sh
+	bash ./playbook.sh
 	@echo "$@ finished!"
