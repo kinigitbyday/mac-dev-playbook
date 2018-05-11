@@ -36,9 +36,9 @@ WHOAMI=$(whoami);
 git clone https://github.com/kinigitbyday/mac-dev-playbook.git "/Users/${WHOAMI}/.setup" > /dev/null;
 git clone https://github.com/kinigitbyday/dotfiles.git "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
 
-sh ./yadr.sh || true
-
 cd "/Users/${WHOAMI}/.setup/";
+
+sh ./yadr.sh || true
 
 echo "Installing requirements";
 ansible-galaxy install -r ./requirements.yml;
