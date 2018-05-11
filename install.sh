@@ -53,8 +53,19 @@ fi
 
 fancy_echo "YADR rake install..."
 git clone https://github.com/skwp/dotfiles.git ~/.yadr
+
+if [ -f "~/Library/Preferences/com.googlecode.iterm2.plist" ]; then
+  fancy_echo "Backing up iTerm2 plist to prevent yadr from requiring input"
+  mv ~/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist.bak
+fi
+
 cd ~/.yadr
 echo "1" | rake install
+
+if [ -f "~/Library/Preferences/com.googlecode.iterm2.plist.bak" ]; then
+  fancy_echo "Restoring iTerm2 plist"
+  mv ~/Library/Preferences/com.googlecode.iterm2.plist.bak ~/Library/Preferences/com.googlecode.iterm2.plist
+fi
 
 cd "/Users/${WHOAMI}/.setup/";
 
