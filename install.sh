@@ -1,9 +1,4 @@
-#!/bin/bash
-
-# Usage:
-# install.sh
-
-set -e
+!#/bin/bash
 
 if ! command -v cc >/dev/null; then
   echo "Installing xcode ..."
@@ -22,29 +17,18 @@ if [[ -z $(which ansible) ]]; then
     brew install ansible > /dev/null;
 fi
 
-if [[ -d "/Users/${WHOAMI}/Documents/dotfiles" ]]; then
+if [[ -d "~/Documents/dotfiles" ]]; then
     echo "Removing dotfiles";
-    rm -rf "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
+    rm -rf "~/Documents/dotfiles" > /dev/null;
 fi
-if [[ -d "/Users/${WHOAMI}/.setup" ]]; then
+if [[ -d "~/.setup" ]]; then
     echo "Removing playbook";
-    rm -rf "/Users/${WHOAMI}/.setup" > /dev/null;
+    rm -rf "~/.setup" > /dev/null;
 fi
 
-WHOAMI=$(whoami);
+git clone https://github.com/kinigitbyday/mac-dev-playbook.git "~/.setup" > /dev/null;
+git clone https://github.com/kinigitbyday/dotfiles.git "~/Documents/dotfiles" > /dev/null;
 
-git clone https://github.com/kinigitbyday/mac-dev-playbook.git "/Users/${WHOAMI}/.setup" > /dev/null;
-git clone https://github.com/kinigitbyday/dotfiles.git "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
+cd "~/.setup/";
 
-cd "/Users/${WHOAMI}/.setup/";
-
-bash -C ./yadr.sh
-
-echo "Installing requirements";
-ansible-galaxy install -r ./requirements.yml;
-
-echo "Initiating playbook";
-
-ansible-playbook ./main.yml -i inventory -K;
-
-echo "Done.";
+make install
