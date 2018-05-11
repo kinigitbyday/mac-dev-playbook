@@ -36,17 +36,7 @@ WHOAMI=$(whoami);
 git clone https://github.com/kinigitbyday/mac-dev-playbook.git "/Users/${WHOAMI}/.setup" > /dev/null;
 git clone https://github.com/kinigitbyday/dotfiles.git "/Users/${WHOAMI}/Documents/dotfiles" > /dev/null;
 
-# Install YADR
-if [ -d "./.yadr" ]; then
-  echo "YADR repo dir exists. Removing ..."
-  rm -rf ./.yadr
-fi
-
-echo "YADR rake install..."
-git clone https://github.com/skwp/dotfiles.git ~/.yadr
-
-cd ~/.yadr
-rake install || true
+sh ./yadr.sh || true
 
 cd "/Users/${WHOAMI}/.setup/";
 
