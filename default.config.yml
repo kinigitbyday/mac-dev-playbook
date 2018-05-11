@@ -15,12 +15,12 @@ dotfiles_files:
   - .zshrc
 
 homebrew_installed_packages:
-  - yleisradio/terraforms/chtf
+  - chtf
   - coreutils
   - git
   - giter8
   - go
-  - caskformula/caskformula/inkscape
+  - inkscape
   - neovim
   - node
   - nvm
@@ -41,6 +41,8 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
+  - yleisradio/terraforms
+  - caskformula/caskformula
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
