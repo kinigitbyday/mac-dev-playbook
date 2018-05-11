@@ -46,7 +46,7 @@ echo "YADR rake install..."
 git clone https://github.com/kinigitbyday/yadr.git ~/.yadr
 
 cd ~/.yadr
-exec rake install
+(rake install)
 
 cd "/Users/${WHOAMI}/.setup/";
 
