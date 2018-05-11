@@ -1,0 +1,2 @@
+- name: Install AnonymousPro
+  command: mv ~/.setup/fonts/Anonymous_Pro.ttf ~/Library/Fonts

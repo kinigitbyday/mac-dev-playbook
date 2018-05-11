@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - ruby
   - sbt
   - terraform
+  - terraform_landscape
   - thefuck
   - wget
   - vegeta
