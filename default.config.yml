@@ -20,7 +20,6 @@ homebrew_installed_packages:
   - git
   - giter8
   - go
-  - inkscape
   - neovim
   - node
   - nvm
@@ -51,6 +50,8 @@ homebrew_cask_apps:
   - firefox
   - google-chrome
   - java
+  - xquartz
+  - inkscape
   - insomnia
   - licecap
   - macdown
