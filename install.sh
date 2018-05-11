@@ -3,8 +3,6 @@
 # Usage:
 # install.sh
 
-trap 'ret=$?; test $ret -ne 0 && printf "failed\n\n" >&2; exit $ret' EXIT
-
 set -e
 
 if ! command -v cc >/dev/null; then
