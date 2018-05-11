@@ -31,4 +31,7 @@ git clone https://github.com/kinigitbyday/dotfiles.git ~/Documents/dotfiles > /d
 
 cd ~/.setup/;
 
+chmod +x scripts/yadr.sh
+chmod +x scripts/playbook.sh
+
 make install
