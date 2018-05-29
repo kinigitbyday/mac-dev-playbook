@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install YADR
+# Install vim_runtime
 if [ -d "./.vim_runtime" ]; then
   echo "vim_runtime repo dir exists. Removing ..."
   rm -rf ./.vim_runtime
