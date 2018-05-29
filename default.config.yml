@@ -55,6 +55,7 @@ homebrew_cask_apps:
   - inkscape
   - insomnia
   - iterm2
+  - karabiner
   - licecap
   - macdown
   - ngrok
