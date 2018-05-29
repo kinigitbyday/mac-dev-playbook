@@ -40,7 +40,6 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - homebrew/core
-  - caskroom/cask
   - yleisradio/terraforms
   - caskformula/caskformula
 
