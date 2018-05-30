@@ -9,21 +9,21 @@ fi
 
 if [[ -z $(which brew) ]]; then
   echo "Installing Homebrew...";
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /dev/null;
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 fi
 
 if [[ -z $(which ansible) ]]; then
     echo "Installing Ansible";
-    brew install ansible > /dev/null;
+    brew install ansible;
 fi
 
 if [[ -d ~/Documents/dotfiles ]]; then
     echo "Removing dotfiles";
-    rm -rf ~/Documents/dotfiles > /dev/null;
+    rm -rf ~/Documents/dotfiles;
 fi
 if [[ -d ~/.setup ]]; then
     echo "Removing playbook";
-    rm -rf ~/.setup > /dev/null;
+    rm -rf ~/.setup;
 fi
 
 git clone https://github.com/kinigitbyday/mac-dev-playbook.git ~/.setup > /dev/null;
