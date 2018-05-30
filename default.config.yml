@@ -40,22 +40,24 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - homebrew/core
-  - caskroom/cask
   - yleisradio/terraforms
   - caskformula/caskformula
+  - homebrew/cask-versions
+  - homebrew/cask
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
   - docker
   - firefox
-  - google-chrome
+#  - google-chrome
   - google-play-music-desktop-player
   - java8
   - xquartz
   - inkscape
   - insomnia
   - iterm2
+  - karabiner-elements
   - licecap
   - macdown
   - ngrok
