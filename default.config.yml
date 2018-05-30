@@ -43,6 +43,7 @@ homebrew_taps:
   - yleisradio/terraforms
   - caskformula/caskformula
   - homebrew/cask-versions
+  - homebrew/cask
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -56,7 +57,7 @@ homebrew_cask_apps:
   - inkscape
   - insomnia
   - iterm2
-  - karabiner
+  - karabiner-elements
   - licecap
   - macdown
   - ngrok
