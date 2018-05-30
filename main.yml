@@ -46,3 +46,5 @@
       with_fileglob: "{{ post_provision_tasks|default(omit) }}"
 
     - include: tasks/fonts.yml
+
+    - include: tasks/trackpad.yml
