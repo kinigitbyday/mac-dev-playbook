@@ -42,13 +42,14 @@ homebrew_taps:
   - homebrew/core
   - yleisradio/terraforms
   - caskformula/caskformula
+  - caskroom/versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
   - docker
   - firefox
-  - google-chrome
+#  - google-chrome
   - google-play-music-desktop-player
   - java8
   - xquartz
