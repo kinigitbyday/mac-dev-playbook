@@ -34,5 +34,3 @@ cd ~/.setup/;
 
 echo "Running playbook"
 bash ./playbook.sh
-
-echo "Done!"
