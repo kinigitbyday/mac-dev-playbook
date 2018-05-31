@@ -8,7 +8,7 @@
   git_config:
     name: alias.switch
     scope: global
-    value: !f() { git checkout $1 2>/dev/null || git checkout -b $1; }; f
+    value: "!f() { git checkout $1 2>/dev/null || git checkout -b $1; }; f"
 
 - name: Update default git editor to nvim
   git_config:
