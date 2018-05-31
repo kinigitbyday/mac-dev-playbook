@@ -50,3 +50,5 @@
     - include: tasks/trackpad.yml
 
     - include: tasks/karabiner.yml
+
+    - include: tasks/iterm2.yml

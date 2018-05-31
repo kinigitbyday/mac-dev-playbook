@@ -1,0 +1,9 @@
+- name: Create iterm2 settings directory
+  file:
+    path: ~/.config/iterm2
+    state: directory
+
+- name: Copy iterm2 settings
+  copy:
+    src: ~/.setup/files/iterm2/com.googlecode.iterm2.plist
+    dest: ~/.config/iterm2
