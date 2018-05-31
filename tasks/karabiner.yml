@@ -1,4 +1,9 @@
-- name: Setup Default Karabiner config
-  shell: |
-    mkdir -p ~/.config/karabiner
-    cp -n ~/.setup/files/karabiner/karabiner.json ~/.config/karabiner.json
+- name: Create default Karabiner config directory
+  file: 
+    path: ~/.config/karabiner
+    state: directory
+
+- name: Setup default Karabiner config
+  copy:
+    src: ~/.setup/files/karabiner/karabiner.json
+    dest: ~/.config/karabiner.json

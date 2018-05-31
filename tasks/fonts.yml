@@ -1,2 +1,5 @@
 - name: Install AnonymousPro
-  command: cp ~/.setup/fonts/Anonymous_Pro.ttf ~/Library/Fonts
+  copy:
+    src: ~/.setup/fonts/Anonymous_Pro.ttf
+    dest: ~/Library/Fonts
+    force: no
