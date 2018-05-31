@@ -30,3 +30,11 @@ git clone https://github.com/kinigitbyday/mac-dev-playbook.git ~/.setup > /dev/n
 git clone https://github.com/kinigitbyday/dotfiles.git ~/Documents/dotfiles > /dev/null;
 
 cd ~/.setup/;
+
+echo "Setting up vimrc (https://github.com/axim/vimrc)"
+bash ./vimrc.sh
+
+echo "Running playbook"
+bash ./playbook.sh
+
+echo "Done!"

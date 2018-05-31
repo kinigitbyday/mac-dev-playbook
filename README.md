@@ -13,10 +13,7 @@ This is a work in progress, and is mostly a means for me to document my current 
 
 ## Installation
 
-1. `curl https://raw.githubusercontent.com/kinigitbyday/mac-dev-playbook/master/init.sh | bash`
-2. `cd ~/.setup`
-3. `bash ./vimrc.sh`
-4. `bash ./playbook.sh`
+`curl https://raw.githubusercontent.com/kinigitbyday/mac-dev-playbook/master/install.sh | bash`
 
 ### Running a specific set of tagged tasks
 
