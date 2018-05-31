@@ -1,0 +1,7 @@
+- name: Clone amix/vim
+  git:
+    repo: https://github.com/amix/vimrc
+    dest: ~/.vim_runtime
+
+- name: Install awesome vimrc
+  command: sh ~/.vim_runtime/install_awesome_vimrc.sh

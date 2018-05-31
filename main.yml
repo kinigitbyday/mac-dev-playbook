@@ -26,6 +26,8 @@
 
     - include: tasks/oh-my-zsh.yml
 
+    - include: tasks/vim.yml
+
     - include: tasks/sudoers.yml
       when: configure_sudoers
 

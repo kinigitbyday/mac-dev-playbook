@@ -22,17 +22,15 @@ if [[ -d ~/Documents/dotfiles ]]; then
     rm -rf ~/Documents/dotfiles;
 fi
 if [[ -d ~/.setup ]]; then
-    echo "Removing playbook";
-    rm -rf ~/.setup;
+    echo "Updating playbook";
+    cd ~/.setup;
+    git pull origin master;
+else 
+  git clone https://github.com/kinigitbyday/mac-dev-playbook.git ~/.setup > /dev/null;
+  git clone https://github.com/kinigitbyday/dotfiles.git ~/Documents/dotfiles > /dev/null;
 fi
 
-git clone https://github.com/kinigitbyday/mac-dev-playbook.git ~/.setup > /dev/null;
-git clone https://github.com/kinigitbyday/dotfiles.git ~/Documents/dotfiles > /dev/null;
-
 cd ~/.setup/;
-
-echo "Setting up vimrc (https://github.com/axim/vimrc)"
-bash ./vimrc.sh
 
 echo "Running playbook"
 bash ./playbook.sh
