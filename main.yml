@@ -52,3 +52,5 @@
     - include: tasks/karabiner.yml
 
     - include: tasks/iterm2.yml
+
+    - include: tasks/git.yml

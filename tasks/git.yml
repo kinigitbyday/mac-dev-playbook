@@ -1,0 +1,23 @@
+- name: Add unstage git alias
+  git_config:
+    name: alias.unstage
+    scope: global
+    value: reset HEAD --
+
+- name: Add switch git alias
+  git_config:
+    name: alias.switch
+    scope: global
+    value: !f() { git checkout $1 2>/dev/null || git checkout -b $1; }; f
+
+- name: Update default git editor to nvim
+  git_config:
+    name: core.editor
+    scope: global
+    value: /usr/local/bin/nvim
+
+- name: Add osxkeychain as git credential helper
+  git_config:
+    name: credential.helper
+    scope: global
+    value: osxkeychain
