@@ -7,3 +7,9 @@
   copy:
     src: ~/.setup/files/iterm2/com.googlecode.iterm2.plist
     dest: ~/.config/iterm2
+
+- name: Set iterm2 setting custom directory
+  command: defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/iterm2"
+
+- name: Tell iterm2 to use custom directory for settings
+  command: defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
