@@ -17,17 +17,21 @@ if [[ -z $(which ansible) ]]; then
     brew install ansible;
 fi
 
-if [[ -d ~/Documents/dotfiles ]]; then
-    echo "Removing dotfiles";
-    rm -rf ~/Documents/dotfiles;
+if [[ -d ~/.dotfiles ]]; then
+    echo "Updating dotfiles";
+    cd ~/.dotfiles;
+    git pull origin master;
+else 
+  echo "Cloning dotfiles"
+  git clone https://github.com/kinigitbyday/dotfiles.git ~/.dotfiles > /dev/null;
 fi
 if [[ -d ~/.setup ]]; then
     echo "Updating playbook";
     cd ~/.setup;
     git pull origin master;
 else 
+  "Cloning playbook"
   git clone https://github.com/kinigitbyday/mac-dev-playbook.git ~/.setup > /dev/null;
-  git clone https://github.com/kinigitbyday/dotfiles.git ~/Documents/dotfiles > /dev/null;
 fi
 
 cd ~/.setup/;
