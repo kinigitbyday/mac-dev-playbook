@@ -62,7 +62,7 @@ homebrew_cask_apps:
   - macdown
   - ngrok
   - sequel-pro
-  - slack
+#  - slack
   - sublime-text
   - vagrant
 
