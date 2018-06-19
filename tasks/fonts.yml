@@ -1,5 +1,5 @@
-- name: Install AnonymousPro
-  copy:
-    src: ~/.setup/fonts/Anonymous_Pro.ttf
+- name: Install fonts
+  synchronize:
+    src: ~/.setup/fonts
     dest: ~/Library/Fonts
-    force: no
+  delegate_to: {{ inventory_hostname }}
