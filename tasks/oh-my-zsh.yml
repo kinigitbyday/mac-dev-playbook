@@ -4,4 +4,6 @@
     dest: ~/.oh-my-zsh
 
 - name: Use ZSH
-  shell: chsh -s /bin/zsh
+  user:
+    name: {{ ansible_env.USER }}
+    shell: /bin/zsh
