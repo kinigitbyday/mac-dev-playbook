@@ -2,4 +2,4 @@
   synchronize:
     src: ~/.setup/fonts
     dest: ~/Library/Fonts
-  delegate_to: {{ inventory_hostname }}
+  delegate_to: "{{ inventory_hostname }}"

@@ -5,5 +5,5 @@
 
 - name: Use ZSH
   user:
-    name: {{ ansible_env.USER }}
+    name: "{{ ansible_env.USER }}"
     shell: /bin/zsh
