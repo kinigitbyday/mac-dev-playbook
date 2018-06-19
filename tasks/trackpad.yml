@@ -1,2 +1,2 @@
 - name: Scroll Direction
-  shell: defaults write -g com.apple.swipescrolldirection -bool false
+  shell: defaults write -g com.apple.swipescrolldirection -bool true
