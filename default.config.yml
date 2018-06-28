@@ -52,7 +52,7 @@ homebrew_cask_apps:
   - docker
   - firefox
 #  - google-chrome
-  - google-play-music-desktop-player
+  - marshallofsound-google-play-music-player
   - java8
   - xquartz
   - inkscape
