@@ -68,6 +68,7 @@ homebrew_cask_apps:
   - slack
   - sublime-text
   - vagrant
+  - visual-studio-code
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
