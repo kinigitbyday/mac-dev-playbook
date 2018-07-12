@@ -21,3 +21,9 @@
     name: credential.helper
     scope: global
     value: osxkeychain
+
+- name: Add changes git alias
+  git_config:
+    name: alias.changes
+    scope: global
+    value: show --stat --oneline
