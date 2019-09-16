@@ -56,7 +56,6 @@ homebrew_cask_apps:
   - gimp  
   - google-chrome
   - marshallofsound-google-play-music-player
-  - java8
   - xquartz
   - insomnia
   - iterm2
