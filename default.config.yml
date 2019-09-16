@@ -41,7 +41,6 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - yleisradio/terraforms
-  - caskformula/caskformula
   - homebrew/cask-versions
   - homebrew/cask
 
@@ -59,7 +58,6 @@ homebrew_cask_apps:
   - marshallofsound-google-play-music-player
   - java8
   - xquartz
-  - inkscape
   - insomnia
   - iterm2
   - karabiner-elements
