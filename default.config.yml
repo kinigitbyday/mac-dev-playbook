@@ -60,7 +60,6 @@ homebrew_cask_apps:
   - insomnia
   - iterm2
   - karabiner-elements
-  - kdiff3
   - licecap
   - macdown
   - ngrok
