@@ -13,27 +13,35 @@ dotfiles_files:
   - .gitignore
   - .osx
   - .zshrc
+  - .custom_copper_zshrc
 
 homebrew_installed_packages:
+  - bitrise
   - chtf
   - coreutils
+  - docker
   - git
   - giter8
   - go
+  - hub
+  - imagemagick
   - neovim
   - node
   - nvm
   - openssl
   - python
   - python3
+  - qrencode
   - ruby
   - sbt
+  - sqlite
   - terraform
   - terraform_landscape
   - thefuck
   - wget
   - vegeta
   - vim
+  - watchman
   - yarn
   - zsh
   - zsh-syntax-highlighting
@@ -46,30 +54,39 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - adoptopenjdk11
   - alfred
   - amethyst
+  - android-ndk
   - android-platform-tools
+  - android-sdk
   - boom-3d
   - chromedriver
+  - db-browser-for-sqlite
   - docker
+  - figma
   - firefox
-  - gimp  
+  - flipper
+  - gimp
   - google-chrome
-  - marshallofsound-google-play-music-player
-  - xquartz
   - insomnia
   - iterm2
-  - java
   - karabiner-elements
   - licecap
   - macdown
+  - mysqlworkbench
   - ngrok
-  - sequel-pro
+  - pusher
   - signal
   - slack
+  - sonos
   - sublime-text
+  - trailer
   - vagrant
   - visual-studio-code
+  - webstorm
+  - xquartz
+  - ytmdesktop-youtube-music
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
