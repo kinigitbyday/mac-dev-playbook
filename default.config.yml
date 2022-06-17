@@ -69,6 +69,7 @@ homebrew_cask_apps:
   - flipper
   - gimp
   - google-chrome
+  - gpg-suite
   - insomnia
   - iterm2
   - karabiner-elements
