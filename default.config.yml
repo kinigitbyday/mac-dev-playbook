@@ -114,6 +114,8 @@ gem_packages:
     version: "2.7.6"
   - name: sqlite3
     version: "1.3.13"
+  - name: cocoapods-user-defined-build-types
+    version: "0.0.7"
 npm_packages: []
   # - name: webpack
   #   state: present # present/absent/latest, default: present
