@@ -55,7 +55,6 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - adoptopenjdk11
   - alfred
   - amethyst
   - android-ndk
@@ -84,6 +83,7 @@ homebrew_cask_apps:
   - slack
   - sonos
   - sublime-text
+  - temurin11
   - trailer
   - vagrant
   - visual-studio-code
