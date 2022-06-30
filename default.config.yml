@@ -64,6 +64,7 @@ homebrew_cask_apps:
   - boom-3d
   - chromedriver
   - db-browser-for-sqlite
+  - discord
   - docker
   - figma
   - firefox
