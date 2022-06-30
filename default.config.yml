@@ -52,6 +52,7 @@ homebrew_taps:
   - yleisradio/terraforms
   - homebrew/cask-versions
   - homebrew/cask
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
