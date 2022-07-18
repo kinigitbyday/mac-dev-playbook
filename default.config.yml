@@ -87,6 +87,7 @@ homebrew_cask_apps:
   - temurin11
   - trailer
   - vagrant
+  - viscosity
   - visual-studio-code
   - webstorm
   - xquartz
