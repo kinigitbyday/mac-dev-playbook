@@ -27,3 +27,15 @@
     name: alias.changes
     scope: global
     value: show --stat --oneline
+
+- name: Add git commiter email
+  git_config:
+    name: user.email
+    scope: global
+    value: reid.knight@hey.com
+
+- name: Add git commiter name
+  git_config:
+    name: user.name
+    scope: global
+    value: Reid

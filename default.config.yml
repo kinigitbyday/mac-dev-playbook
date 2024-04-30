@@ -61,16 +61,13 @@ homebrew_cask_apps:
   - android-ndk
   - android-platform-tools
   - android-sdk
+  - arc
   - boom-3d
   - chromedriver
-  - db-browser-for-sqlite
   - discord
   - docker
   - figma
-  - firefox
-  - flipper
   - gimp
-  - google-chrome
   - gpg-suite
   - insomnia
   - iterm2
@@ -80,9 +77,7 @@ homebrew_cask_apps:
   - mysqlworkbench
   - ngrok
   - pusher
-  - signal
   - slack
-  - sonos
   - sublime-text
   - temurin11
   - trailer
@@ -91,7 +86,6 @@ homebrew_cask_apps:
   - visual-studio-code
   - webstorm
   - xquartz
-  - ytmdesktop-youtube-music
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
