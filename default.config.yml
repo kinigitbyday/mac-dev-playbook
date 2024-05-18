@@ -75,7 +75,6 @@ homebrew_cask_apps:
   - pusher
   - slack
   - sublime-text
-  - temurin11
   - trailer
   - vagrant
   - viscosity
