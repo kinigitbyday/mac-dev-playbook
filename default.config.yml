@@ -48,11 +48,7 @@ homebrew_installed_packages:
   - zsh-syntax-highlighting
 
 homebrew_taps:
-  - homebrew/core
   - yleisradio/terraforms
-  - homebrew/cask-versions
-  - homebrew/cask
-  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -87,7 +83,7 @@ homebrew_cask_apps:
   - webstorm
   - xquartz
 
-# See `geerlingguy.mas` role documentation for usage instructions.
+# See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
