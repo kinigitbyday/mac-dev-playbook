@@ -33,6 +33,7 @@ homebrew_installed_packages:
   - qrencode
   - ruby
   - sbt
+  - spaceship
   - sqlite
   - terraform
   - terraform_landscape
