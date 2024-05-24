@@ -1,6 +1,6 @@
 - name: Install input sources
   synchronize:
-    src: ~/.setup/files/input-sources
+    src: ~/.setup/files/input-sources/
     dest: "/Library/Keyboard Layouts"
   delegate_to: "{{ inventory_hostname }}"
   become: yes
