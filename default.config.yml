@@ -13,13 +13,11 @@ dotfiles_files:
   - .gitignore
   - .osx
   - .zshrc
-  - .custom_copper_zshrc
 
 homebrew_installed_packages:
   - bitrise
   - chtf
   - coreutils
-  - fig
   - git
   - go
   - hub
@@ -33,7 +31,7 @@ homebrew_installed_packages:
   - qrencode
   - ruby
   - sbt
-  - spaceship
+  - starship
   - sqlite
   - terraform
   - terraform_landscape
@@ -52,6 +50,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - alfred
+  - amazon-q
   - amethyst
   - android-ndk
   - android-platform-tools
